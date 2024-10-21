@@ -1,0 +1,136 @@
+.ctn-padre {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgb(3, 3, 255);
+  mix-blend-mode: hue;
+}
+
+.container-1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.logo {
+  mix-blend-mode: overlay;
+}
+
+.container-1 logo {
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 100px;
+  padding-inline: 50%;
+  text-align: right;
+
+}
+
+.container-2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.ctn-formulario {
+  width: 400px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 50%);
+  margin: auto;
+  margin-top: 15%;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 50%);
+}
+
+.ctn-info {
+  width: 100%;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.espacio {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.ctn-formulario h1 {
+  margin-bottom: 10px;
+  margin: auto;
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 23pt;
+  mix-blend-mode: multiply;
+  animation: cambioColor 5s infinite;
+}
+
+@keyframes cambioColor {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: rgb(4, 229, 214);
+  }
+}
+
+h3 {
+  margin-bottom: 5px;
+  margin: auto;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.ctn-info .boton {
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  padding: 12px;
+  pointer-events: fill;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 0, 0);
+  border: 2px solid red;
+  mix-blend-mode: overlay;
+  transition: all 1s;
+}
